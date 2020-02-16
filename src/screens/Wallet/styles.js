@@ -29,6 +29,7 @@ export const BalanceBox = styled.View`
 
 export const UsersList = styled.FlatList.attrs({
   horizontal: true,
+  showsHorizontalScrollIndicator: false,
   contentContainerStyle: {
     alignItems: "center"
   }
