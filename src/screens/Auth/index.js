@@ -8,7 +8,7 @@ import Text from "../../components/Text";
 import Button from "../../components/Button";
 import Icon from "../../components/Icon";
 
-export default function Auth() {
+export default function Auth({ navigation }) {
   return (
     <Container>
       <LeftEffect />
@@ -54,6 +54,7 @@ export default function Auth() {
             textWeight={600}
             marginBottom="24"
             rightIcon={<Icon name="long-arrow-right" size={14} />}
+            onPress={() => navigation.navigate("Wallet")}
           />
           <Button
             text="Create an account"
