@@ -89,7 +89,7 @@ export default function Wallet() {
           data={users}
           renderItem={({ item, index }) => (
             <UserItem last={users.length - 1 == index}>
-              <UserItemPhoto source={{ url: item.photo }} />
+              <UserItemPhoto source={{ uri: item.photo }} />
               <Text color="#3A4276" weight={400} size={12} marginTop={15}>
                 {item.name}
               </Text>
