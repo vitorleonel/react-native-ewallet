@@ -6,6 +6,7 @@ export const Content = styled.Text`
   font-size: ${props => (props.size ? `${props.size}px` : "16px")};
   font-weight: ${props => props.weight || 500};
   color: ${props => props.color || "#7B7F9E"};
+  text-align: ${props => props.align || "left"};
   margin-top: ${props => (props.marginTop ? `${props.marginTop}px` : "0")};
   margin-bottom: ${props =>
     props.marginBottom ? `${props.marginBottom}px` : "0"};
