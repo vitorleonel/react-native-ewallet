@@ -1,4 +1,5 @@
 import styled from "styled-components/native";
+import Constants from "expo-constants";
 import { Dimensions } from "react-native";
 
 const screenWidth = Math.round(Dimensions.get("window").width);
@@ -22,7 +23,7 @@ export const LeftEffect = styled.ImageBackground.attrs({
 export const Content = styled.View`
   width: ${screenWidth - 120}px;
   margin-left: auto;
-  padding: 80px 24px;
+  padding: ${Constants.statusBarHeight + 24}px 24px;
   background-color: #ffffff;
 
   justify-content: space-between;

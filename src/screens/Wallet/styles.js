@@ -1,4 +1,5 @@
 import styled from "styled-components/native";
+import Constants from "expo-constants";
 
 export const Container = styled.SafeAreaView`
   flex: 1;
@@ -10,6 +11,7 @@ export const Header = styled.View`
   justify-content: space-between;
   align-items: center;
   padding: 24px;
+  padding-top: ${Constants.statusBarHeight + 24}px;
   margin-bottom: 32px;
 `;
 
