@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import AuthScreen from "./screens/Auth";
+import WalletScreen from "./screens/Wallet";
 
 const Stack = createStackNavigator();
 
@@ -11,6 +12,7 @@ export default function Routes() {
     <NavigationContainer>
       <Stack.Navigator headerMode="none">
         <Stack.Screen name="Auth" component={AuthScreen} />
+        <Stack.Screen name="Wallet" component={WalletScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
