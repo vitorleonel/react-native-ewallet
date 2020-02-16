@@ -9,14 +9,18 @@ export default function Button(props) {
     <Container {...props}>
       {props.leftIcon}
 
-      <Text
-        color={props.textColor || "#212330"}
-        weight={props.textWeight}
-        marginLeft={props.leftIcon && "8"}
-        marginRight={props.rightIcon && "8"}
-      >
-        {props.text}
-      </Text>
+      {!props.children ? (
+        <Text
+          color={props.textColor || "#212330"}
+          weight={props.textWeight}
+          marginLeft={props.leftIcon && "8"}
+          marginRight={props.rightIcon && "8"}
+        >
+          {props.text}
+        </Text>
+      ) : (
+        props.children
+      )}
 
       {props.rightIcon}
     </Container>

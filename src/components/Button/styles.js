@@ -12,8 +12,9 @@ export const Container = styled.TouchableOpacity.attrs({
   margin-left: ${props => (props.marginLeft ? `${props.marginLeft}px` : "0")};
   margin-right: ${props =>
     props.marginRight ? `${props.marginRight}px` : "0"};
+  border-radius: ${props =>
+    props.borderRadius ? `${props.borderRadius}px` : "10px"};
 
-  border-radius: 10px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
