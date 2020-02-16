@@ -59,8 +59,13 @@ export default function Wallet() {
       </Row>
       {/* end balance box */}
 
-      <Row paddingLeft="24" paddingRight="24" marginTop="40">
-        <Row direction="row" justifyContent="space-between">
+      <Row marginTop="40">
+        <Row
+          paddingLeft="24"
+          paddingRight="24"
+          direction="row"
+          justifyContent="space-between"
+        >
           <Text color="#3A4276" weight={600} marginBottom={20}>
             Send Money
           </Text>
@@ -71,8 +76,8 @@ export default function Wallet() {
         <UsersList
           ListHeaderComponent={
             <Button
-              width={48}
-              height={48}
+              width={52}
+              height={52}
               borderRadius={48}
               marginLeft={24}
               marginRight={20}
