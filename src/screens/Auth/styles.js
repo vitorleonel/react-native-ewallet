@@ -27,5 +27,3 @@ export const Content = styled.View`
 
   justify-content: space-between;
 `;
-
-export const NextContent = styled.View``;

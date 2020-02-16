@@ -1,10 +1,12 @@
 import React from "react";
 
-import { Container, LeftEffect, Content, NextContent } from "./styles";
+import { Container, LeftEffect, Content } from "./styles";
 
 import Brand from "../../components/Brand";
+import Row from "../../components/Row";
 import Text from "../../components/Text";
 import Button from "../../components/Button";
+import Icon from "../../components/Icon";
 
 export default function Auth() {
   return (
@@ -12,17 +14,31 @@ export default function Auth() {
       <LeftEffect />
 
       <Content>
-        <NextContent>
-          <Text size="24" lineHeight="32" weight={600} color="#1B1D28">
-            06:20 PM
-          </Text>
+        <Row>
+          <Row
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <Text size="24" lineHeight="32" weight={600} color="#1B1D28">
+              06:20 PM
+            </Text>
+
+            <Row direction="row" alignItems="center">
+              <Icon name="cloud" size={18} color="#FFAC30" />
+
+              <Text color="#1B1D28" weight={600} marginLeft="8">
+                34° C
+              </Text>
+            </Row>
+          </Row>
 
           <Text size="14" marginTop="4">
             Nov.10.2020 | Wednesday
           </Text>
-        </NextContent>
+        </Row>
 
-        <NextContent>
+        <Row>
           <Brand type="vertical" width="90" height="90" />
 
           <Text marginTop="16" marginRight="24">
@@ -30,12 +46,21 @@ export default function Auth() {
           </Text>
 
           <Text marginTop="24">Join For Free.</Text>
-        </NextContent>
+        </Row>
 
-        <NextContent>
-          <Button text="Sign in" marginBottom="24" />
-          <Button text="Create an account" backgroundColor="transparent" />
-        </NextContent>
+        <Row>
+          <Button
+            text="Sign in"
+            textWeight={600}
+            marginBottom="24"
+            rightIcon={<Icon name="long-arrow-right" size={14} />}
+          />
+          <Button
+            text="Create an account"
+            textWeight={400}
+            backgroundColor="transparent"
+          />
+        </Row>
       </Content>
     </Container>
   );
