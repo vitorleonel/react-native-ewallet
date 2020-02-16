@@ -14,6 +14,7 @@ export const Container = styled.TouchableOpacity.attrs({
     props.marginRight ? `${props.marginRight}px` : "0"};
 
   border-radius: 10px;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 `;
