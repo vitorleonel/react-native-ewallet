@@ -10,7 +10,7 @@ const Stack = createStackNavigator();
 export default function Routes() {
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode="none">
+      <Stack.Navigator headerMode="none" initialRouteName="Auth">
         <Stack.Screen name="Auth" component={AuthScreen} />
         <Stack.Screen name="Wallet" component={WalletScreen} />
       </Stack.Navigator>
