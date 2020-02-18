@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 import Constants from "expo-constants";
 
-export const Container = styled.SafeAreaView`
+export const Container = styled.ScrollView`
   flex: 1;
   background-color: #ffffff;
 `;
